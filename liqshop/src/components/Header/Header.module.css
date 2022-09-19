@@ -1,0 +1,132 @@
+button {
+    background: none;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+}
+
+.button:hover {
+    color: #6351E3;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4%;
+    justify-content: center;
+    position: relative;
+    background-color: #000000;
+    border-bottom: 3px solid rgba(220, 112, 214, 0.25);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.line {
+    width: 300px;
+    height: 4px;
+    background-color: #B8388FBF;
+    box-shadow: 0px 0px 4px 5px #B8388FBF;
+    border-radius: 2px;
+    animation: blink 2s cubic-bezier(0.5,0.5,0.5,0.5) infinite;
+}   
+
+/* CATALOG */
+
+.catalog {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    z-index: 2;
+    width: 400px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.catalogClose {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.catalogOpen {
+    animation: appear 0.3s ease-in-out;
+}
+
+.catalog__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 80%; 
+}
+
+.catalog__name {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+
+.catalog__table {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.catalog__table button {
+    font-size: 16px;
+    max-width: 80px;
+    color:white;
+    word-wrap: break-word;
+    transition: all 0.15s ease-in-out;
+}
+
+.catalog__table button:hover {
+    color: #6351E3
+}
+
+ 
+/* ANIME */
+
+
+@keyframes blink {
+    50% {box-shadow: 0px 0px 5px 6px #a73875bf; background-color: #a73875bf;}
+}
+
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes close {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+/*  AHAHHAHAHAHHAHAHHAHAHHAHAHHAH SOSAT' CSSTRANSITIONGROUP */
